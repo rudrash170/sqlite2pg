@@ -2,7 +2,7 @@ import sqlite3
 import psycopg2
 from supabase import create_client
 
-#Variables, change as
+#Variables, change 'em
 database_name = 'your-database.db'  #SQLite3
 supabase_url = 'your-supabase-url'
 supabase_key = 'your-supabase-key'
@@ -13,7 +13,6 @@ sqlite_conn = sqlite3.connect(database_name)
 sqlite_cur = sqlite_conn.cursor()
 
 # Connect to Supabase
-
 supabase = create_client(supabase_url, supabase_key)
 
 # Get all tables
